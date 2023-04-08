@@ -1,27 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
-
+/* widht: 1325 */
+/* heighy: 627 */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 label {
     color: hsl(0, 1%, 44%);
+
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
 }
 input {
     color: hsl(0, 0%, 8%);
+    
+    font-size: 22px;
+    font-weight: 800;
+
+    padding: 0.4rem 0.75rem;
+
+    width: 90px;
+    height: 35px;
+
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
 }
 button {
     background-color: hsl(259, 100%, 65%);
+    transition: 0.3s all;
     
     border: none;
     outline: none;
     border-radius: 50%;
     padding: 1rem;
+
+    cursor: pointer;
+    margin-right: 2.25rem;
+
+    z-index: 1;
+}
+button:hover,
+button:active {
+    z-index: 1;
+    background-color: hsl(0, 0%, 8%);
+    transition: 0.3s all;
 }
 img {
     width: 35px;
     height: 30px;
 }
+hr {
+    width: 77%;
+    height: 1px;
+    outline: none;
+    border: none;
+    background-color: hsl(0, 0%, 86%);
+    margin-left: 6%;
+}
 .purple-text {
     color: hsl(259, 100%, 65%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+
+    width: 100%;
+    height: 100dvh;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+
+    width: 45.51%;
+    height: 67.78%;
+    background-color: #fff;
+
+    border-radius: 15px;
+    border-bottom-right-radius: 120px;
+}
+.card-inputs {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 30%;
+}
+.card-day {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 2.25rem;
+}
+.card-month {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1.313rem;
+}
+.card-year {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1.313rem;
+}
+.card-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 15.5%;
+
+    position: relative;
 }
