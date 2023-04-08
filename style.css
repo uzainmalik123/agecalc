@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+label {
+    color: hsl(0, 1%, 44%);
+}
+input {
+    color: hsl(0, 0%, 8%);
+}
+button {
+    background-color: hsl(259, 100%, 65%);
+    
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 1rem;
+}
+img {
+    width: 35px;
+    height: 30px;
+}
+.purple-text {
+    color: hsl(259, 100%, 65%);
+}
