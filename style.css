@@ -1,7 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
-/* widht: 1325 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,500;1,800&display=swap');
 /* heighy: 627 */
+/* - White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%) */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+    color: hsl(0, 1%, 44%);
+}
+label:nth-child(2) {
+    margin-left: 5.95rem;
+}
+label:nth-child(3) {
+    margin-left: 4.50rem;
+}
+input {
+    padding: 1rem 0;
+    padding-left: 0.8rem;
+    outline: transparent;
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 86%);
+
+    width: 6.2rem;
+    height: 1rem;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+button {
+    padding: 1rem 0.8rem;
+    cursor: pointer;
+    transition: 0.5s all;
+
+    border-radius: 50%;
+    border: none;
+
+    background-color: hsl(259, 100%, 65%);
+}
+button:hover,
+button:active {
+    background-color: hsl(0, 0%, 8%);
+    transition: 0.5s all;
+}
+img {
+    width: 70%;
+    height: 70%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100dvh;
+
+    background-color: hsl(0, 0%, 94%);
+}
+.card {
+    width: 40%;
+    height: 70%;
+
+    padding: 2.25rem 2.25rem;
+
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+}
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+}
+.labels {
+    width: 70%;
+}
+.errors {
+    width: 70%;
+
+    display: flex;
+    display: none;
+}
+.errors p {
+    font-size: 0.65rem;
+    font-weight: 500;
+    font-style: italic;
+
+    color: hsl(0, 100%, 67%);
+}
+.errors p:nth-child(2),
+.errors p:nth-child(3) {
+    margin-left: 1.5rem;
+}
+.button {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+}
+.button::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    background-color: hsl(0, 0%, 86%);
+}
+.all-text {
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dates {
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 800;
+
+    color: hsl(259, 100%, 65%);
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.dates p {
+    margin: 0;
+
+    line-height: 5rem;
+}
+.text {
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 800;
+
+    color: hsl(0, 0%, 8%);
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.text p {
+    margin: 0;
+
+    line-height: 5rem;
+}
+
