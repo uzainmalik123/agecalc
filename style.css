@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,500;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 /* heighy: 627 */
 /* - White: hsl(0, 0%, 100%)
 - Off white: hsl(0, 0%, 94%)
@@ -35,6 +37,7 @@ input {
 
     font-size: 22px;
     font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
 }
 button {
     padding: 1rem 0.8rem;
@@ -67,7 +70,7 @@ img {
 }
 .card {
     width: 40%;
-    height: 70%;
+    height: 60%;
 
     padding: 2.25rem 2.25rem;
 
@@ -127,26 +130,10 @@ img {
     height: 60%;
 
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .dates {
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 800;
-
-    color: hsl(259, 100%, 65%);
-
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-.dates p {
-    margin: 0;
-
-    line-height: 5rem;
-}
-.text {
     font-size: 5rem;
     font-style: italic;
     font-weight: 800;
@@ -154,12 +141,15 @@ img {
     color: hsl(0, 0%, 8%);
 
     display: flex;
-    flex-direction: column;
     margin: 0;
 }
-.text p {
+.dates p,
+.dates span {
     margin: 0;
-
     line-height: 5rem;
 }
+.dates span {
+    color: hsl(259, 100%, 65%);
 
+    margin-right: 5px;
+}
