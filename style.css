@@ -20,10 +20,10 @@ label {
     color: hsl(0, 1%, 44%);
 }
 label:nth-child(2) {
-    margin-left: 5.95rem;
+    margin-left: 7rem;
 }
 label:nth-child(3) {
-    margin-left: 4.50rem;
+    margin-left: 5.75rem;
 }
 input {
     padding: 1rem 0;
@@ -32,7 +32,7 @@ input {
     border-radius: 6px;
     border: 1px solid hsl(0, 0%, 86%);
 
-    width: 6.2rem;
+    width: 7rem;
     height: 1rem;
 
     font-size: 22px;
@@ -87,28 +87,38 @@ img {
     justify-content: space-between;
     align-items: center;
 
-    width: 70%;
+    width: 80%;
 }
 .labels {
-    width: 70%;
+    width: 80%;
 }
-.errors {
-    width: 70%;
+.field-errors,
+.date-error { 
+    width: 80%;
 
     display: flex;
     display: none;
+
+    transition: 0.2s all;
 }
-.errors p {
+.field-errors p,
+.date-error p {
     font-size: 0.65rem;
     font-weight: 500;
     font-style: italic;
 
     color: hsl(0, 100%, 67%);
 }
-.errors p:nth-child(2),
-.errors p:nth-child(3) {
-    margin-left: 1.5rem;
+.field-errors p:nth-child(2),
+.field-errors p:nth-child(3) {
+    margin-left: 2.75rem;
 }
+.date-error p:nth-child(2) {
+    margin-left: 2.85rem;
+}
+.date-error p:nth-child(3) {
+    margin-left: 1.8rem;
+} 
 .button {
     display: flex;
 

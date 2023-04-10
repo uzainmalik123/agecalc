@@ -16,36 +16,41 @@
     <div class="container">
       <div class="card">
         <div class="labels">
-          <label>DAY</label>
-          <label>MONTH</label>
-          <label>YEAR</label>
+          <label id="label-day">DAY</label>
+          <label id="label-month">MONTH</label>
+          <label id="label-year">YEAR</label>
         </div>
         <div class="inputs">
           <input placeholder="DD" id="input-day" type="text" required />
           <input placeholder="MM" id="input-month" type="text" required />
           <input placeholder="YYYY" id="input-year" type="text" required />
         </div>
-        <div class="errors">
+        <div class="field-errors">
           <p>This field is required</p>
           <p>This field is required</p>
           <p>This field is required</p>
         </div>
+        <div class="date-error">
+          <p>Must be a valid day</p>
+          <p>Must be a valid month</p>
+          <p>Must be in the past</p>
+        </div>
         <div class="button">
-          <button>
+          <button type="submit" id="submit-btn">
             <img src="./assets/images/icon-arrow.svg" alt="Sumbit" />
           </button>
         </div>
         <div class="all-text">
           <div class="dates">
-            <span>38</span>
+            <span id="changed-years">--</span>
             <p>years</p>
           </div>     
           <div class="dates">
-            <span>3</span>
+            <span id="changed-months">--</span>
             <p>months</p>
           </div>        
           <div class="dates">
-            <span>26</span>
+            <span id="changed-days">--</span>
             <p>days</p>
           </div>
           <!-- <div class="text">
