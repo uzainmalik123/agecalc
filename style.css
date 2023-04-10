@@ -96,7 +96,6 @@ img {
 .date-error { 
     width: 80%;
 
-    display: flex;
     display: none;
 
     transition: 0.2s all;
