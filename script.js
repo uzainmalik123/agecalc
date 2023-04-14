@@ -11,9 +11,9 @@ submitBtn.addEventListener("click", () => {
 
   let newDate = new Date();
   let currentYear = newDate.getFullYear(); 
-  let allDays = "31";
-  let allMonths = "12";
-
+  let allDays = 31;
+  let allMonths = 12;
+  
   for (let i = 0; i < allInputs.length; i++) {
     allInputs[i].style.borderColor = "hsl(0, 0%, 86%)";
     allLabels[i].style.color = "hsl(0, 1%, 44%)";
@@ -59,6 +59,5 @@ submitBtn.addEventListener("click", () => {
     document.getElementsByTagName('span')[1].textContent = calculatedMonth
     document.getElementsByTagName('span')[2].textContent = calculatedDay
   }
-
   calculateAge();
 });
